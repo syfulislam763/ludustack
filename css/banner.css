@@ -1,0 +1,199 @@
+body{
+    background-color: #161B28;
+    /* background-color: #fff; */
+}
+
+.my-banner{
+    background-color: #1D2333;
+    box-shadow: 2px 2px 10px 2px #161B28;
+    /* background-color: #fff;
+    box-shadow: 2px 2px 10px 2px #d6cfcf; */
+    border-radius: 10px;
+    min-height: 500px;
+    width: 80%;
+    margin: 120px auto 30px auto;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+.carousel-hw{
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+.meta-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0px 30px 0px;
+}
+
+
+
+.data{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.data div{
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid #161B28;
+}
+
+.meta-data small {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+.meta-data h6{
+    margin: 0px;
+    padding: 0px;
+}
+
+.owener-name{
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    left: 37%;
+    right: 40%;
+    top: 270px;
+}
+.social-icons{
+    width: 30%;
+    text-align: center;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+
+.social-icons img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.connecting-btn{
+    position: absolute;
+    right: 5%;
+    bottom: 120px;
+}
+.connecting-btn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.join-btn{
+    background-color: #6942e9;
+}
+.join-btn:hover{
+    background-color: #9668FF;
+}
+.donate-btn{
+    background-color: #0fcf39;
+}
+.donate-btn:hover{
+    background-color: #3cf564;
+}
+
+
+@media only screen and (min-width: 1990px){
+
+    .carousel-hw{
+        height: 600px;
+    }
+    .owener-name{
+        top:470px;
+    }
+} 
+
+
+@media only screen and (max-width: 980px){
+    
+    .meta-data{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .data{
+        order: 3;
+        margin: 30px 0px 70px 30px;
+        width:80%;
+    }
+    .data div{
+        width: 80%;
+    }
+    .data div:last-of-type{
+        border-right: none;
+    }
+    .owener-name{
+        order: 1;
+        top: 330px;
+    }
+
+    .owener-name canvas{
+        height:100px;
+        width: 100px;
+    }
+    .social-icons{
+        order: 2;
+        margin-top: 70px;
+        margin-left: 30px;
+    }
+    .connecting-btn{
+        position: static;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .social-icons{
+        width:80%;
+    }
+}
+@media only screen and (max-width: 520px){
+    .data small {
+        font-size: 2vw;
+    }
+    .owener-name{
+        width: 40%;
+        top: 130px;
+        right: 100%;
+    }
+    .meta-data{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .owener-name small{
+        font-size:3vw;
+    }
+    .owener-name h6{
+        font-size:3vw;
+    }
+
+    .connecting-btn{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .join-btn{
+        margin: 10px 0px;
+    }
+
+    .carousel-hw{
+        height:200px;
+    }
+    
+}
